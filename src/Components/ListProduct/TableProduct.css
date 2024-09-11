@@ -1,0 +1,204 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4caf50;
+    /* Màu nền cho tiêu đề */
+    color: white;
+    /* Màu chữ cho tiêu đề */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Màu nền cho hàng chẵn */
+}
+
+tr:hover {
+    background-color: #ddd;
+    /* Màu nền khi di chuột qua hàng */
+}
+
+@media (max-width: 600px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+        /* Chuyển đổi thành dạng khối trên màn hình nhỏ */
+    }
+    th {
+        display: none;
+        /* Ẩn tiêu đề trên màn hình nhỏ */
+    }
+    tr {
+        margin-bottom: 15px;
+        /* Khoảng cách giữa các hàng */
+    }
+    td {
+        text-align: right;
+        /* Căn phải cho dữ liệu */
+        position: relative;
+        padding-left: 50%;
+        /* Tạo khoảng cách bên trái */
+    }
+    td::before {
+        content: attr(data-label);
+        /* Hiển thị tên cột trước dữ liệu */
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+
+/* CSS cho biểu tượng trong bảng */
+
+td span:hover {
+    color: #4caf50;
+    /* Màu khi di chuột qua biểu tượng */
+}
+
+td span:last-child:hover {
+    color: #f44336;
+    /* Màu cho biểu tượng xóa khi di chuột */
+}
+
+
+/* CSS cho nút "Tạo mới" */
+
+button.create-button {
+    padding: 10px 15px;
+    /* Khoảng cách bên trong nút */
+    background-color: #4caf50;
+    /* Màu nền */
+    color: white;
+    /* Màu chữ */
+    border: none;
+    /* Không có viền */
+    border-radius: 5px;
+    /* Bo tròn góc */
+    cursor: pointer;
+    /* Con trỏ chuột khi di chuột qua */
+    font-size: 16px;
+    /* Kích thước chữ */
+    display: flex;
+    /* Để căn giữa biểu tượng và chữ */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    transition: background-color 0.3s;
+    /* Hiệu ứng chuyển màu nền */
+}
+
+button.create-button:hover {
+    background-color: #45a049;
+    /* Màu nền khi di chuột qua */
+}
+
+button.create-button i {
+    margin-right: 5px;
+    /* Khoảng cách giữa biểu tượng và chữ */
+}
+
+
+/* CSS cho modal */
+
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Nền tối cho modal */
+}
+
+.ReactModal__Content {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: 50%;
+    transform: translate(90%, 10%);
+    /* Đưa modal vào giữa màn hình */
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    width: 500px;
+    /* Chiều rộng của modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Đổ bóng cho modal */
+}
+
+
+/* CSS cho form trong modal */
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* Sắp xếp các trường từ trên xuống dưới */
+}
+
+label {
+    margin-bottom: 15px;
+    /* Khoảng cách giữa các trường */
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* Viền cho input và textarea */
+    border-radius: 4px;
+    /* Bo tròn góc */
+    width: 100%;
+    /* Chiều rộng 100% để vừa với modal */
+    box-sizing: border-box;
+    /* Đảm bảo padding không làm tăng chiều rộng */
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    /* Màu nền cho nút */
+    color: white;
+    /* Màu chữ cho nút */
+    border: none;
+    /* Không có viền */
+    border-radius: 4px;
+    /* Bo tròn góc */
+    cursor: pointer;
+    /* Con trỏ chuột khi di chuột qua */
+    margin-top: 10px;
+    /* Khoảng cách trên nút */
+}
+
+button:hover {
+    opacity: 0.8;
+    /* Hiệu ứng khi di chuột qua */
+}
+
+.available {
+    white-space: nowrap;
+    color: green;
+    /* Màu xanh cho trạng thái khả dụng */
+    font-weight: bold;
+    /* Chữ đậm */
+}
+
+.unavailable {
+    white-space: nowrap;
+    color: red;
+    /* Màu đỏ cho trạng thái không khả dụng */
+    font-weight: bold;
+    /* Chữ đậm */
+}
