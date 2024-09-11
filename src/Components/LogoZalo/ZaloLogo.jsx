@@ -13,7 +13,6 @@ const ZaloLogo = () => {
         alt="Logo Zalo"
         className="zalo-logo"
       />
-      0902583722
     </a>
   );
 };
