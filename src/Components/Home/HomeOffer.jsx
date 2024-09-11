@@ -32,21 +32,27 @@ export const HomeOffer = () => {
 
       <div className="offer1">
         <img
-          src={"https://lamia.com.vn/storage/banner-sale/1770x7202-11.jpg"}
+          src={
+            "https://cand.com.vn/Files/Image/hoaithu/2019/12/06/thumb_660_31ed0552-e553-45b9-952f-58df56ecebfa.jpg"
+          }
         ></img>
         <img
           src={
-            "https://lamia.com.vn/storage/banner-sale/banner-lamia-sale-cuoi-thang.jpg"
+            "https://cand.com.vn/Files/Image/hoaithu/2019/12/06/thumb_660_5e9616f1-60f0-4fa6-b335-c6730a6077cb.jpg"
           }
         ></img>
       </div>
 
       <div className="offer1">
         <img
-          src={"https://lamia.com.vn/storage/banner-sale/1770x720-7.jpg"}
+          src={
+            "https://cand.com.vn/Files/Image/hoaithu/2019/12/06/thumb_660_cfc3c74b-cca6-4ce4-a884-262f28505063.jpg"
+          }
         ></img>
         <img
-          src={"https://lamia.com.vn/storage/banner-sale/1770x72002.jpg"}
+          src={
+            "https://cand.com.vn/Files/Image/hoaithu/2019/12/06/thumb_660_358d7e9a-c96e-4cff-b08b-fe6c834ef442.jpg"
+          }
         ></img>
       </div>
     </div>
