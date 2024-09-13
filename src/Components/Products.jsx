@@ -162,6 +162,15 @@ const Products = ({ data }) => {
                         image={e.image}
                         alt={e.clotheName}
                         loading="lazy"
+                        sx={{
+                          width: "100%",
+                          height: "200px", // Chiều cao cố định
+                          objectFit: "cover", // Giữ tỷ lệ khung hình
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          overflow: "hidden",
+                        }}
                       />
                       <CardContent
                         sx={{
