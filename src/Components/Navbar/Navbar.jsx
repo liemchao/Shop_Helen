@@ -62,7 +62,7 @@ export const Navbar = () => {
               paddingRight: "1px",
               //   hoverBorderBottom:"5px solid #ee5f73"
             }}
-            to="/men"
+            to="/aodai"
           >
             Cửa hàng
           </NavLink>
