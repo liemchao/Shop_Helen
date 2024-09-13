@@ -68,27 +68,8 @@ export const Navbar = () => {
           </NavLink>
           <MenNav></MenNav>
         </div>
-        <div className="link1">
-          <NavLink
-            className="link women"
-            style={{
-              marginLeft: "3%",
-              marginBottom: "-2%",
-              fontWeight: "bold",
-              fontSize: "14px",
-              textDecoration: "none",
-              color: "#282C3F",
-              paddingBottom: "10px",
-              paddingLeft: "5px",
-              paddingRight: "5px",
-            }}
-            to="/women"
-          >
-            Giới thiệu
-          </NavLink>
-          {/* <WomenNav></WomenNav> */}
-        </div>
-        <div className="link1">
+   
+       
           <Link
             className="link kids"
             style={{
@@ -129,7 +110,7 @@ export const Navbar = () => {
           </Link>
           <HomeLivingNav></HomeLivingNav>
         </div> */}
-        <div className="link1">
+     
           <Link
             className="link beauty"
             style={{
