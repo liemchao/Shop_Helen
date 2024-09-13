@@ -93,11 +93,11 @@ export const Navbar = () => {
                 to={"/"}
                 className="rightLink"
               >
-                Logout
+                Đăng xuất
               </Link>
             ) : (
               <Link to={"/login"} className="rightLink">
-                Login
+                Đăng nhập
               </Link>
             )}
           </span>
@@ -111,7 +111,7 @@ export const Navbar = () => {
           <br></br>
           <span>
             <Link to={"/wishlist"} className="rightLink">
-              Wishlist
+              Yêu thích
             </Link>
           </span>
         </p>
@@ -133,7 +133,7 @@ export const Navbar = () => {
               alt=""
             />
             <br></br>
-            <span className="rightLink">Bag</span>
+            <span className="rightLink">Giỏ hàng</span>
           </p>
         </Link>
       </Div>

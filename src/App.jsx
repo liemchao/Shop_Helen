@@ -50,7 +50,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/men" element={<Products data={products} />}></Route>
+        <Route path="/aodai" element={<Products data={products} />}></Route>
         <Route path="/table" element={<ProductsTable></ProductsTable>}></Route>
         <Route
           path="/women"

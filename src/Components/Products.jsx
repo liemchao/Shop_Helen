@@ -211,14 +211,14 @@ const Products = ({ data }) => {
                             color="text.secondary"
                             size="medium"
                           >
-                            Sell
+                            Bán
                           </Typography>
                           <Typography
                             variant="body2"
                             color="text.secondary"
                             size="medium"
                           >
-                            For Rent
+                            Cho thuê
                           </Typography>
                         </div>
                         <div
@@ -272,7 +272,7 @@ const Products = ({ data }) => {
                               marginRight: "4px",
                             }}
                           />
-                          Add to cart
+                          Mua sản phẩm
                         </Button>
                         <Button
                           variant="outlined"
@@ -290,7 +290,7 @@ const Products = ({ data }) => {
                               textTransform: "capitalize",
                             }}
                           />
-                          Wishlist
+                          Yêu thích
                         </Button>
                       </CardActions>
                     </Card>
